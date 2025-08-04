@@ -1,0 +1,72 @@
+Product Requirements Document (PRD)
+Mugo Plumbing Solutions Mobile App
+Prepared for: Cursor AI
+By: Vincent Mugondora
+1. Product Overview
+Mugo Plumbing Solutions is a mobile app designed to help users in Zimbabwe easily book qualified plumbers and related services. The app supports two user roles:
+- Clients (service requesters)
+- Providers (plumbers or technicians)
+
+This app will offer:
+- Fast, on-demand plumbing service booking
+- Secure payments
+- Local provider matching
+- Simple onboarding for plumbers
+2. Design Source
+Use the UI/UX screens provided in Visily as the source of truth.
+Design system includes:
+- Primary colors: #0056A6 (deep blue) & #1FC2B3 (turquoise accent)
+- Typography: Clean sans-serif like Inter or Poppins
+- Components: Buttons, cards, modals, nav bars as per Visily
+3. Core Features (MVP)
+- Authentication: Phone/email login, OTP or password
+- User Profiles: Separate onboarding flows for clients and providers
+- Service Booking: Form with service type, location, date/time, budget
+- Provider Matching: Backend selects suitable provider based on service & availability
+- Real-time Chat: Basic chat between client and provider
+- Notifications: In-app + push notifications (booking confirmed, provider en route)
+- Payment: Integration with Stripe or local method (e.g. EcoCash)
+- Rating & Feedback: 1-5 star review + comment post-service
+- Admin Dashboard: To approve providers and manage disputes
+4. Technical Requirements
+- Frontend: React Native with Expo
+- Backend: Node.js or FastAPI
+- Database: MongoDB (via Atlas)
+- Auth: Auth0 or Firebase Auth
+- Notifications: Expo Push Notifications or OneSignal
+- Payments: Stripe, Paynow, or EcoCash
+- Chat: Firebase Realtime DB or Socket.IO
+- DevOps: GitHub CI/CD, Docker optional
+5. Screens to Build (from Visily)
+- Splash Screen
+- Login / Sign Up
+- User Type Selection
+- Home (client) — Service categories
+- Service Request Form
+- Booking Summary + Confirm
+- Provider List / Profile View
+- Live Chat
+- Payment Checkout
+- Booking Success
+- Notifications
+- Settings + Profile Management
+- Admin view (optional)
+6. Milestones & Timeline
+- Sprint 1: Auth, Role Selection, Basic Navigation (5 days)
+- Sprint 2: Booking Form, Home, Service Categories (5 days)
+- Sprint 3: Provider Matching Logic + Provider Signup Flow (6 days)
+- Sprint 4: Chat & Notifications (4 days)
+- Sprint 5: Payment Integration + Rating (4 days)
+- Sprint 6: Final QA & Deployment (3 days)
+Total estimated time: 27 working days (~5.5 weeks)
+7. Security & Compliance
+- Input validation for forms
+- HTTPS for API communication
+- Secure auth tokens (JWT or OAuth2)
+- Role-based access control
+8. Success Criteria
+- Fully functioning mobile app, visually aligned with Visily design
+- Service can be booked in under 2 minutes
+- Providers receive instant job notifications
+- App tested on both Android & iOS
+- Admin able to monitor transactions and service qualitys

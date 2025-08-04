@@ -1,0 +1,36 @@
+Mugo Plumbing Solutions
+📘 API Documentation & User Stories
+1. User Stories
+- As a client I want to book a plumber based on location and budget, so I can get fast help.
+- As a client I want to pay within the app using local options so I don’t have to use cash.
+- As a client I want to get notified when a plumber is assigned to me so I know what’s happening.
+- As a provider I want to receive job requests that match my services and area so I don’t waste time.
+- As a provider I want to mark a job as completed so I can get paid.
+- As an admin I want to approve and manage providers so I can ensure service quality.
+2. API Endpoints Overview
+Base URL: `https://api.mugoplumbing.co.zw`
+Authentication
+`POST /auth/signup` - Register new user
+`POST /auth/login` - Log in user
+`POST /auth/logout` - Log out user
+Clients
+`GET /services` - Get list of plumbing services
+`POST /booking` - Create a new service request
+`GET /bookings/:userId` - Get bookings for client
+Providers
+`POST /providers/register` - Register plumber/provider
+`GET /providers/available` - List available providers
+`PATCH /jobs/:id/complete` - Mark job as complete
+Payments
+`POST /payments/checkout` - Initiate payment
+`GET /payments/status/:bookingId` - Check payment status
+Admin
+`GET /admin/providers/pending` - List pending providers
+`PATCH /admin/providers/:id/approve` - Approve provider
+3. Roadmap (for Deck)
+Sprint 1: Authentication & Navigation
+Sprint 2: Service Booking Flow
+Sprint 3: Provider Matching Logic
+Sprint 4: Chat + Notification
+Sprint 5: Payment Integration
+Sprint 6: Admin Dashboard + QA
